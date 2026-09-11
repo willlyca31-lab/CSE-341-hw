@@ -1,8 +1,8 @@
 {
   "name": "contacts-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "CSE-341 Contacts API",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "start-prod": "node server.js",

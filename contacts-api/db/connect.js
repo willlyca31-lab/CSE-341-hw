@@ -10,7 +10,7 @@ async function connectDatabase() {
   try {
     await client.connect();
 
-    database = client.db("contacts");
+    database = client.db("cse341-db");
 
     console.log("Connected to MongoDB Atlas");
   } catch (error) {
