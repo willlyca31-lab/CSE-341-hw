@@ -1,25 +1,33 @@
+require("dotenv").config();
+
 const { MongoClient } = require("mongodb");
 
 const client = new MongoClient(process.env.MONGODB_URI);
 
-let db;
+let database;
 
-async function connectToDatabase() {
+async function connectDatabase() {
   try {
     await client.connect();
-    db = client.db();
+
+    database = client.db("contacts");
+
     console.log("Connected to MongoDB Atlas");
   } catch (error) {
     console.error("MongoDB connection error:", error);
-    throw error;
+    process.exit(1);
   }
 }
 
-function getDb() {
-  return db;
+function getDatabase() {
+  if (!database) {
+    throw new Error("Database has not been connected.");
+  }
+
+  return database;
 }
 
 module.exports = {
-  connectToDatabase,
-  getDb
+  connectDatabase,
+  getDatabase,
 };

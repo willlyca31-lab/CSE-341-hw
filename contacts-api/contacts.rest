@@ -1,0 +1,148 @@
+```
+### 1. Create Carlos Martinez
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Carlos",
+  "lastName": "Martinez",
+  "email": "carlos.martinez@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1992-04-15"
+}
+
+###
+
+### 2. Create Sofia Hernandez
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Sofia",
+  "lastName": "Hernandez",
+  "email": "sofia.hernandez@example.com",
+  "favoriteColor": "Purple",
+  "birthday": "1995-08-22"
+}
+
+###
+
+### 3. Create Daniel Garcia
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Daniel",
+  "lastName": "Garcia",
+  "email": "daniel.garcia@example.com",
+  "favoriteColor": "Green",
+  "birthday": "1989-11-03"
+}
+
+###
+
+### 4. Create Maria Lopez
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Maria",
+  "lastName": "Lopez",
+  "email": "maria.lopez@example.com",
+  "favoriteColor": "Red",
+  "birthday": "1997-02-18"
+}
+
+###
+
+### 5. Create James Wilson
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "James",
+  "lastName": "Wilson",
+  "email": "james.wilson@example.com",
+  "favoriteColor": "Black",
+  "birthday": "1991-06-30"
+}
+
+###
+
+### 6. Create Emily Johnson
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "email": "emily.johnson@example.com",
+  "favoriteColor": "Yellow",
+  "birthday": "1994-09-12"
+}
+
+###
+
+### 7. Create Michael Brown
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Michael",
+  "lastName": "Brown",
+  "email": "michael.brown@example.com",
+  "favoriteColor": "Orange",
+  "birthday": "1988-12-25"
+}
+
+###
+
+### 8. Create Ana Rodriguez
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Ana",
+  "lastName": "Rodriguez",
+  "email": "ana.rodriguez@example.com",
+  "favoriteColor": "Pink",
+  "birthday": "1996-03-07"
+}
+
+###
+
+### 9. Create David Thomas
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "David",
+  "lastName": "Thomas",
+  "email": "david.thomas@example.com",
+  "favoriteColor": "Gray",
+  "birthday": "1990-10-19"
+}
+
+###
+
+### 10. Create Laura Anderson
+
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Laura",
+  "lastName": "Anderson",
+  "email": "laura.anderson@example.com",
+  "favoriteColor": "White",
+  "birthday": "1993-01-28"
+}
