@@ -7,6 +7,7 @@ const { connectDatabase } = require("./db/connect");
 const contactsRoutes = require("./routes/contacts");
 const swaggerDocument = require("./swagger/swagger.json");
 
+// Load environment variables
 dotenv.config();
 
 const app = express();
@@ -22,12 +23,12 @@ app.use(
   swaggerUi.setup(swaggerDocument)
 );
 
-// Contacts routes
+// Contacts API routes
 app.use("/contacts", contactsRoutes);
 
 // Home route
 app.get("/", (req, res) => {
-  res.send("Contacts API is running.");
+  res.status(200).send("Contacts API is running.");
 });
 
 // 404 route
@@ -37,7 +38,7 @@ app.use((req, res) => {
   });
 });
 
-// Start server after connecting to MongoDB
+// Start the server after connecting to MongoDB
 async function startServer() {
   try {
     await connectDatabase();
@@ -47,6 +48,7 @@ async function startServer() {
     });
   } catch (error) {
     console.error("Failed to start server:", error);
+    process.exit(1);
   }
 }
 
