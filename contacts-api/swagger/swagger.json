@@ -1,3 +1,4 @@
+
 {
   "openapi": "3.0.0",
   "info": {
@@ -7,7 +8,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000"
+      "url": "https://cse-341-hw-contacts-api.onrender.com"
     }
   ],
   "paths": {
