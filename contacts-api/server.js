@@ -24,7 +24,7 @@ app.use(
 );
 
 // Contacts API routes
-app.use("/contacts", contactsRoutes);
+app.use("/contacts-api", contactsRoutes);
 
 // Home route
 app.get("/", (req, res) => {
