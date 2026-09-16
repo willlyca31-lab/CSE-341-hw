@@ -1,5 +1,5 @@
 const { ObjectId } = require("mongodb");
-const { getDatabase } = require("../db/connect");
+const { getDatabase } = require("../data/database");
 
 const collectionName = "contacts";
 
